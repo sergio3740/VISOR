@@ -77,67 +77,88 @@
         function pop_CATASTRO_URBANO_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">OBJECTID</th>\
+                        <td>' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['IDMANZANA'] !== null ? autolinker.link(feature.properties['IDMANZANA'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">IDMANZANA</th>\
+                        <td>' + (feature.properties['IDMANZANA'] !== null ? autolinker.link(feature.properties['IDMANZANA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DEPAPRED'] !== null ? autolinker.link(feature.properties['DEPAPRED'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">DEPAPRED</th>\
+                        <td>' + (feature.properties['DEPAPRED'] !== null ? autolinker.link(feature.properties['DEPAPRED'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['MUNIPRED'] !== null ? autolinker.link(feature.properties['MUNIPRED'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">MUNIPRED</th>\
+                        <td>' + (feature.properties['MUNIPRED'] !== null ? autolinker.link(feature.properties['MUNIPRED'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ZONA'] !== null ? autolinker.link(feature.properties['ZONA'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">ZONA</th>\
+                        <td>' + (feature.properties['ZONA'] !== null ? autolinker.link(feature.properties['ZONA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['SECTOR'] !== null ? autolinker.link(feature.properties['SECTOR'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">SECTOR</th>\
+                        <td>' + (feature.properties['SECTOR'] !== null ? autolinker.link(feature.properties['SECTOR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['COMUNA'] !== null ? autolinker.link(feature.properties['COMUNA'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">COMUNA</th>\
+                        <td>' + (feature.properties['COMUNA'] !== null ? autolinker.link(feature.properties['COMUNA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['BARRIO'] !== null ? autolinker.link(feature.properties['BARRIO'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">BARRIO</th>\
+                        <td>' + (feature.properties['BARRIO'] !== null ? autolinker.link(feature.properties['BARRIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['MANZANA'] !== null ? autolinker.link(feature.properties['MANZANA'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">MANZANA</th>\
+                        <td>' + (feature.properties['MANZANA'] !== null ? autolinker.link(feature.properties['MANZANA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['TERRENO'] !== null ? autolinker.link(feature.properties['TERRENO'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">TERRENO</th>\
+                        <td>' + (feature.properties['TERRENO'] !== null ? autolinker.link(feature.properties['TERRENO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['CONDICION'] !== null ? autolinker.link(feature.properties['CONDICION'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">CONDICION</th>\
+                        <td>' + (feature.properties['CONDICION'] !== null ? autolinker.link(feature.properties['CONDICION'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['EDIFPRED'] !== null ? autolinker.link(feature.properties['EDIFPRED'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">EDIFPRED</th>\
+                        <td>' + (feature.properties['EDIFPRED'] !== null ? autolinker.link(feature.properties['EDIFPRED'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['PISOPRED'] !== null ? autolinker.link(feature.properties['PISOPRED'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">PISOPRED</th>\
+                        <td>' + (feature.properties['PISOPRED'] !== null ? autolinker.link(feature.properties['PISOPRED'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['PREDIO'] !== null ? autolinker.link(feature.properties['PREDIO'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">PREDIO</th>\
+                        <td>' + (feature.properties['PREDIO'] !== null ? autolinker.link(feature.properties['PREDIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NPN'] !== null ? autolinker.link(feature.properties['NPN'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">NPN</th>\
+                        <td>' + (feature.properties['NPN'] !== null ? autolinker.link(feature.properties['NPN'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NUMEPRED'] !== null ? autolinker.link(feature.properties['NUMEPRED'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">NUMEPRED</th>\
+                        <td>' + (feature.properties['NUMEPRED'] !== null ? autolinker.link(feature.properties['NUMEPRED'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NOM_EDIFIC'] !== null ? autolinker.link(feature.properties['NOM_EDIFIC'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">NOM_EDIFIC</th>\
+                        <td>' + (feature.properties['NOM_EDIFIC'] !== null ? autolinker.link(feature.properties['NOM_EDIFIC'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['ETIQUETA'] !== null ? autolinker.link(feature.properties['ETIQUETA'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">ETIQUETA</th>\
+                        <td>' + (feature.properties['ETIQUETA'] !== null ? autolinker.link(feature.properties['ETIQUETA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['CONEXION'] !== null ? autolinker.link(feature.properties['CONEXION'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">CONEXION</th>\
+                        <td>' + (feature.properties['CONEXION'] !== null ? autolinker.link(feature.properties['CONEXION'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">SHAPE_Leng</th>\
+                        <td>' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['SHAPE_Area'] !== null ? autolinker.link(feature.properties['SHAPE_Area'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">SHAPE_Area</th>\
+                        <td>' + (feature.properties['SHAPE_Area'] !== null ? autolinker.link(feature.properties['SHAPE_Area'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -147,14 +168,12 @@
             return {
                 pane: 'pane_CATASTRO_URBANO_1',
                 opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
+                color: 'rgba(53,121,177,1.0)',
                 dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(232,113,141,1.0)',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1,
+                fillOpacity: 0,
                 interactive: true,
             }
         }
